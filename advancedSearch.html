@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Google Clone</title>
+  </head>
+  <body>
+    <header>
+      <nav class="links">
+        <a href="index.html">Google Search</a>
+      </nav>
+    </header>
+
+    <main class="main-advanced">
+      <p class="main-title">Advanced Search</p>
+      <form
+        action="https://www.google.com/search"
+        method="GET"
+        class="advanced_search_form"
+      >
+        <div class="form-header">
+          <span class="main-subtitle">Find pages with...</span>
+          <div class="hidden_input"></div>
+          <span class="main-helperText">To do this in the search box.</span>
+        </div>
+
+        <!-- Reusable form control -->
+        <div class="form_control">
+          <label for="as_q">all these words:</label>
+          <input type="text" id="as_q" name="as_q" />
+          <small
+            >Type the important words:
+            <span class="search_example">"tri-colour rat terrier"</span></small
+          >
+        </div>
+
+        <div class="form_control">
+          <label for="as_epq">exact word or phrase:</label>
+          <input type="text" id="as_epq" name="as_epq" />
+          <small
+            >Put exact words in quotes:
+            <span class="search_example">"rat terrier"</span></small
+          >
+        </div>
+
+        <div class="form_control">
+          <label for="as_oq">any of these words:</label>
+          <input type="text" id="as_oq" name="as_oq" />
+          <small
+            >Type OR between all the words you want:
+            <span class="search_example">miniature OR standard</span></small
+          >
+        </div>
+
+        <div class="form_control">
+          <label for="as_eq">none of these words:</label>
+          <input type="text" id="as_eq" name="as_eq" />
+          <small
+            >Put a minus sign just before words that you don't want:
+            <span class="search_example">-rodent, -"Jack Russell"</span></small
+          >
+        </div>
+
+        <div class="form_control">
+          <div class="action_button">
+            <input type="submit" value="Advanced Search" id="advanced_button" />
+          </div>
+          <small></small>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
