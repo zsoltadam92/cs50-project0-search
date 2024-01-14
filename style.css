@@ -1,0 +1,100 @@
+/* Define common variables */
+:root {
+  --font-size-base: 1rem;
+  --font-size-small: 0.6875rem;
+  --font-size-medium: 1.25rem;
+  --font-size-large: 1.5rem;
+  --line-height: 1.5625rem; /* 25px */
+  --padding-small: 0.5rem; /* 8px */
+  --padding-medium: 1rem;
+  --padding-large: 1.5rem;
+  --border-radius: 1px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: arial, sans-serif;
+}
+
+/* index.html */
+header {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: var(--padding-medium);
+}
+
+nav {
+  display: flex;
+  gap: var(--padding-small);
+}
+
+nav a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: var(--font-size-base);
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.main-search,
+.main-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 7%;
+}
+
+.image_container {
+  margin-bottom: var(--padding-medium);
+}
+
+.image_container img {
+  height: 5.75rem; /* 92px */
+  width: 100%;
+}
+
+.search_input {
+  width: 36.5rem; /* 584px */
+  min-height: 2.75rem; /* 44px */
+  border: 1px solid #dfe1e5;
+  border-radius: var(--border-radius);
+  padding-left: var(--padding-medium);
+  font-size: var(--font-size-base);
+}
+
+.search_input:focus {
+  outline: none;
+}
+
+.search_buttons {
+  margin: var(--padding-medium);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--padding-small);
+}
+
+.search_buttons input {
+  padding: 0 var(--padding-medium);
+  line-height: var(--line-height);
+  border: 1px solid #f8f9fa;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  background-color: #f8f9fa;
+  color: #3c4043;
+}
+
+.search_buttons input:hover {
+  border: 1px solid #dadce0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}

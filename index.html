@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Search</title>
-    </head>
-    <body>
-        <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-        </form>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Google Clone</title>
+  </head>
+  <body>
+    <header>
+      <nav class="links">
+        <a href="imageSearch.html">Images</a>
+        <a href="advancedSearch.html">Advanced Search</a>
+      </nav>
+    </header>
+
+    <main class="main-search">
+      <div class="image_container">
+        <img src="./google.png" alt="Google Search" />
+      </div>
+      <form action="https://www.google.com/search" method="GET">
+        <input type="text" name="q" required class="search_input" />
+        <div class="search_buttons">
+          <input type="submit" value="Google Search" />
+          <input type="submit" name="btnI" value="I'm Feeling Lucky" />
+        </div>
+      </form>
+    </main>
+  </body>
 </html>
